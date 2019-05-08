@@ -1,0 +1,65 @@
+$desktop: 1440px;
+$tablet: 768px;
+$mobile: 320px;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../assets/leaves.jpg");
+    background-size: cover;
+}
+
+//Varibles
+$mainColour: yellow; 
+$secondaryColour: darkorange;
+$outlineColour: lightblue;
+$mainTextColour: wheat;
+
+@mixin header-footer{
+    background-color: #323232;
+    display: flex;
+    margin: 0%;
+}
+
+@mixin button-style {
+    color: wheat;
+    width: 220px;
+    height: 48px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: $secondaryColour;
+    border: none;
+    text-align: center;
+    padding: 4px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+    h1, h4{
+        font-size: 24px;
+        color: $mainTextColour;
+        width: 45vw;
+        text-align: center;
+        padding-bottom: 20px;
+    }    
+
+    #countdown{
+        border: 2px $outlineColour solid;
+        width: 27vw;
+        text-align: center;
+        overflow-wrap: break-word;
+        color: $mainTextColour;
+    }
+    
+    #temperature{
+        padding-bottom: 20vh;
+        // border: 2px $outlineColour solid;
+    }
+
+    a{
+        @include button-style();
+    }
+}

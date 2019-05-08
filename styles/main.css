@@ -1,1 +1,52 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../assets/leaves.jpg");
+  background-size: cover;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+section h1, section h4 {
+  font-size: 24px;
+  color: wheat;
+  width: 45vw;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+section #countdown {
+  border: 2px lightblue solid;
+  width: 27vw;
+  text-align: center;
+  overflow-wrap: break-word;
+  color: wheat;
+}
+
+section #temperature {
+  padding-bottom: 20vh;
+}
+
+section a {
+  color: wheat;
+  width: 220px;
+  height: 48px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: darkorange;
+  border: none;
+  text-align: center;
+  padding: 4px;
+}
+/*# sourceMappingURL=main.css.map */
