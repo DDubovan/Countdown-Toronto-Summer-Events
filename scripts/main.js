@@ -21,6 +21,11 @@ var countdown = setInterval(function() {
         document.getElementById("countdown").innerText = "It's finally summer!!";
     }
 }, 1000);
+
+var temp = document.getElementById("temperature");
+temp.addEventListener('click', (event) => {
+    event.target.toggle('done');
+  }, false);
     
 
 
